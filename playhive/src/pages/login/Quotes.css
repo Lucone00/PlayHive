@@ -1,0 +1,7 @@
+.virgolette::after {
+    content: '"';
+}
+
+.virgolette::before {
+    content: '"';
+}
