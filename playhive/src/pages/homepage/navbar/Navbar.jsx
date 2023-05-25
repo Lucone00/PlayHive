@@ -1,14 +1,17 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
 import IconHome from './IconHome'
 import IconGroup from './IconGroup'
 import IconMessage from './IconMessage'
 import IconUser from './IconUser'
 import SearchInput from './SearchInput'
 
+//variabile di stato per tenere traccia di elementi cliccati
+//funzione che restituisce l'icona in base all'indice del map e fornisce il fill se l'indice esaminato è quello cliccato
 
 const navigation = [
-  { name: <IconHome className="h-6 w-6" aria-hidden="true"/>, href: '#', current: true },
+  { name: <IconHome className="h-6 w-6"  aria-hidden="true"/>, href: '#', current: true },
   { name: <IconGroup className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false },
   { name: <IconMessage className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false },
   { name: <BellIcon className="h-6 w-6" aria-hidden="true" />, href: '#', current: false },
@@ -20,6 +23,19 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+
+  const [selectedMenu, setSelectedMenu] = useState(navigation);
+
+  function handleClickNav(id) {
+    const newSelectedMenu = [...selectedMenu];
+    console.log(newSelectedMenu[id], id)
+    if(newSelectedMenu[id]) { 
+      newSelectedMenu[id].current = true
+    }
+    setSelectedMenu(newSelectedMenu)
+  }
+
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -52,12 +68,13 @@ export default function Navbar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
+                    {navigation.map((item, id) => (
                       <a
-                        key={item.name}
+                        key={id}
                         href={item.href}
+                        onClick={() => handleClickNav(id)}
                         className={classNames(
-                          item.current ? 'text-red-500' : 'text-gray-300 hover:bg-slate-800 hover:text-white',
+                          selectedMenu[id].current ? 'text-red-500' : 'text-gray-300 hover:bg-slate-800 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
