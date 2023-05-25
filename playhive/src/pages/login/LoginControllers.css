@@ -1,0 +1,46 @@
+.controllers-container {
+  position: relative;
+  height: 700px;
+  width: 450px;
+}
+
+.ps5-controller {
+  transition: all 1s;
+  position: absolute;
+  right: 50px;
+  animation: fadeIn 1s 1s forwards;
+}
+
+.xbox-controller {
+  position: absolute;
+  top: 110px;
+  right: 40px;
+  animation: fadeIn 1s 2s forwards;
+}
+
+.nes-controller {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  animation: fadeIn 1s 3s forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

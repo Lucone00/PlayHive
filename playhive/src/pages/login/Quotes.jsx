@@ -35,7 +35,7 @@ const Quotes = () => {
 
   return (
     <>
-      <div className="flex flex-col w-fit h-auto">
+      <div className="flex flex-col w-fit h-auto quotes-text">
         <h1 className="virgolette">{quote}</h1>
         <p>{character}</p>
       </div>

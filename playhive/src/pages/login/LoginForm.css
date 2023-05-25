@@ -1,0 +1,60 @@
+.login-form-main {
+  margin-right: 35%;
+  border-radius: 36px;
+  height: 50rem;
+  background: #fffafa;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  gap: 20px;
+  background-image: url("../../assets/nes-console.png");
+  background-size: 800px;
+  background-position: top -200px right -300px;
+  background-repeat: no-repeat;
+  --borderWidth: 36px;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-form-main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 7px solid transparent;
+    border-radius: 36px;
+    animation: animatedBorder 3s linear infinite;
+  }
+
+.login-form-main .login-form-title {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 64px;
+  padding-bottom: 60px;
+}
+
+.login-form-main .login-form-inputs {
+  padding-top: 80px;
+}
+
+.login-form-main .login-form-button button {
+  background: linear-gradient(90deg, #f78361 0%, #f53b64 77.16%);
+  height: 45px;
+  width: 200px;
+  border-radius: 7px;
+}
+
+@keyframes animatedBorder {
+    0% {
+      border-color: #f78361;
+    }
+    50% {
+      border-color: #f53b64;
+    }
+    100% {
+      border-color: #f78361;
+    }
+  }
+  

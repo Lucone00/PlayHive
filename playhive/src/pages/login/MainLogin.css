@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,100;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  background-color: #242a37;
+}
+
+.login-main {
+  height: 100%;
+  width: 100%;
+  background-color: #242a37;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.login-main .login-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.login-main .login-header .login-title {
+  font-family: "Roboto Condensed";
+  background: linear-gradient(90deg, #f78361 0%, #f53b64 77.16%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.login-main .login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 8%;
+}
+
+.login-main .login-body .login-quotes {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.login-main .login-body .login-form {
+  flex-grow: 1;
+}
