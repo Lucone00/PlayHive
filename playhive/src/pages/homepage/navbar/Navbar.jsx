@@ -74,8 +74,8 @@ export default function Navbar() {
                         href={item.href}
                         onClick={() => handleClickNav(id)}
                         className={classNames(
-                          selectedMenu[id].current ? 'text-red-500' : 'text-gray-300 hover:bg-slate-800 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          selectedMenu[id].current ? 'text-red-500 border border-gray-800 border-b-red-500  ' : 'text-gray-300 hover:bg-slate-800 hover:text-white',
+                          'px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
