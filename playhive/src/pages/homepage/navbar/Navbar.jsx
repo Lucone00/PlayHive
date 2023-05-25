@@ -11,7 +11,7 @@ import SearchInput from './SearchInput'
 //funzione che restituisce l'icona in base all'indice del map e fornisce il fill se l'indice esaminato è quello cliccato
 
 const navigation = [
-  { name: <IconHome className="h-6 w-6"  aria-hidden="true"/>, href: '#', current: true },
+  { name: <IconHome className="h-6 w-6"  aria-hidden="true"/>, href: '#', current: false},
   { name: <IconGroup className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false },
   { name: <IconMessage className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false },
   { name: <BellIcon className="h-6 w-6" aria-hidden="true" />, href: '#', current: false },
@@ -74,7 +74,7 @@ export default function Navbar() {
                         href={item.href}
                         onClick={() => handleClickNav(id)}
                         className={classNames(
-                          selectedMenu[id].current ? 'text-red-500 border border-gray-800 border-b-red-500  ' : 'text-gray-300 hover:bg-slate-800 hover:text-white',
+                          selectedMenu[id].current ? 'text-red-500 border border-gray-800 border-b-red-500  ' : 'text-gray-300 hover:bg-slate-800 hover:text-white border-none',
                           'px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
