@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import "./Quotes.css"
+import "./Quotes.css";
 
 const Quotes = () => {
   const [quote, setQuote] = useState("");
   const [character, setCharacter] = useState("");
+  const [apiLoaded, setApiLoaded] = useState(false);
 
   useEffect(() => {
     const fetchQuote = async () => {
@@ -22,6 +23,7 @@ const Quotes = () => {
           setQuote(`${quoteText}`);
           setCharacter(`- ${characterText}`);
           localStorage.setItem("quote", quoteText);
+          setApiLoaded(true);
         } else {
           throw new Error("Network response was not ok.");
         }
@@ -36,8 +38,12 @@ const Quotes = () => {
   return (
     <>
       <div className="flex flex-col w-fit h-auto quotes-text">
-        <h1 className="virgolette">{quote}</h1>
-        <p>{character}</p>
+        {apiLoaded && (
+          <>
+            <h1 className="virgolette">"{quote}"</h1>
+            <p>{character}</p>
+          </>
+        )}
       </div>
     </>
   );

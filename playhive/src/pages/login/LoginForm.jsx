@@ -1,5 +1,4 @@
 import { useState } from "react";
-import nesConsole from "../../assets/nes-console.png"
 import "./LoginForm.css";
 
 const LoginForm = () => {

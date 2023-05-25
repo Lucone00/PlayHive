@@ -14,6 +14,7 @@
   --borderWidth: 36px;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 .login-form-main::after {
@@ -26,6 +27,7 @@
     border: 7px solid transparent;
     border-radius: 36px;
     animation: animatedBorder 3s linear infinite;
+    z-index: -1;
   }
 
 .login-form-main .login-form-title {

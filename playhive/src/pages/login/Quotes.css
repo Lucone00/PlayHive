@@ -1,13 +1,6 @@
-.virgolette::after {
-    content: '"';
-}
-
-.virgolette::before {
-    content: '"';
-}
-
 .quotes-text {
     font-family: 'roboto';
+    font-style: normal;
     font-size: 30px;
     font-weight: 700;
     color: #fffbfb;
