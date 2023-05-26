@@ -1,8 +1,11 @@
 import Navbar from "./navbar/Navbar";
+import "./HomePage.css"
 
 function HomePage(){
 return <>
-        <Navbar/>
+        <div className="background">
+                <Navbar/>
+        </div>
         </>
 }
 

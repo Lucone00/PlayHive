@@ -44,7 +44,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between w-auto">
                 <h1 className="sm:flex items-center text-red-500 text-2xl hidden">PlayHive</h1>
                 <div className="sm:ml-6 ">
-                  <div className="flex space-x-2">
+                  <div className="flex space-x-2 sm:space-x-8">
                     {navigation.map((item, id) => (
                       <a
                         key={id}
