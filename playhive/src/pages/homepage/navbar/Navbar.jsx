@@ -1,5 +1,5 @@
 import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { BellIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 import IconHome from './IconHome'
 import IconGroup from './IconGroup'
@@ -11,11 +11,11 @@ import SearchInput from './SearchInput'
 //funzione che restituisce l'icona in base all'indice del map e fornisce il fill se l'indice esaminato è quello cliccato
 
 const navigation = [
-  { name: <IconHome className="h-6 w-6"  aria-hidden="true"/>, href: '#', current: false},
-  { name: <IconGroup className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false },
-  { name: <IconMessage className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false },
-  { name: <BellIcon className="h-6 w-6" aria-hidden="true" />, href: '#', current: false },
-  { name: <IconUser className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false }
+  { name: <IconHome className="h-6 w-6"  aria-hidden="true"/>, href: '#', current: false, description: "Home"},
+  { name: <IconGroup className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false, description: "Groups" },
+  { name: <IconMessage className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false, description: "Messages" },
+  { name: <BellIcon className="h-6 w-6" aria-hidden="true" />, href: '#', current: false, description: "Notifiche" },
+  { name: <IconUser className="h-6 w-6" aria-hidden="true"/>, href: '#', current: false, description: "Profile" }
 ]
 
 function classNames(...classes) {
@@ -38,43 +38,20 @@ export default function Navbar() {
 
   return (
     <Disclosure as="nav" className="bg-gray-800">
-      {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
+            <div className="relative flex h-16 items-center">
               <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between w-auto">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                <h1 className="sm:flex items-center text-red-500 text-2xl hidden">PlayHive</h1>
+                <div className="sm:ml-6 ">
+                  <div className="flex space-x-2">
                     {navigation.map((item, id) => (
                       <a
                         key={id}
                         href={item.href}
                         onClick={() => handleClickNav(id)}
                         className={classNames(
-                          selectedMenu[id].current ? 'text-red-500 border border-gray-800 border-b-red-500  ' : 'text-gray-300 hover:bg-slate-800 hover:text-white border-none',
+                          selectedMenu[id].current ? 'text-red-500 border border-gray-800 border-b-red-500' : 'text-gray-300 hover:bg-slate-800 hover:text-white border-none',
                           'px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -89,7 +66,6 @@ export default function Navbar() {
             </div>
           </div>
         </>
-      )}
     </Disclosure>
   )
 }

@@ -1,13 +1,13 @@
 export default function SearchInput() {
     return (
         <div className="flex items-center">
-            <div className="flex space-x-1 bg-slate-900 border border-transparent rounded-full">
+            <div className="flex space-x-1 sm:bg-slate-900 sm:border sm:border-transparent rounded-full">
                 <input
                     type="text"
-                    className="block w-full px-4 py-2 text-slate-300 bg-slate-900 border border-transparent rounded-full rounded-r-none focus:border-red-400 focus:ring-red-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                    className=" w-full px-4 py-2 text-slate-300 bg-slate-900 border border-transparent rounded-full rounded-r-none focus:border-red-400 focus:ring-red-300 focus:outline-none focus:ring focus:ring-opacity-40 hidden sm:block"
                     placeholder="Search..."
                 />
-                <button className="px-4 text-white bg-red-600 rounded-full rounded-l-none">
+                <button className="px-2 py-2 text-white bg-red-600 rounded-full sm:rounded-l-none sm:px-4 sm:py-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-5 h-5"
