@@ -1,0 +1,40 @@
+.character-framework {
+  width: 40%;
+  height: 30%;
+}
+.image-box {
+  width: 100%;
+  height: auto;
+  max-width: 180px;
+  max-height: 150px;
+  min-width: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-menu {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  display: none;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-option {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-box:hover .image-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
