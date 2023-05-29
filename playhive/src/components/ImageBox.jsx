@@ -7,11 +7,11 @@ const ImageBox = () => {
   );
   const characters = [
     "../../public/assets/Goblin_info.webp",
-    "../../public/assets/pexels-cottonbro-studio-4842563.jpg",
-    "../../public/assets/pexels-erik-mclean-7476603.jpg",
-    "../../public/assets/Goblin_info.webp",
-    "../../public/assets/Goblin_info.webp",
-    "../../public/assets/Goblin_info.webp",
+    "../../public/assets/Pikachu.jpeg",
+    "../../public/assets/Lucario.png",
+    "../../public/assets/Sonic.jpg",
+    "../../public/assets/Zelda.png",
+    "../../public/assets/squirtle.png",
   ];
 
   const handleImageSelect = (image) => {

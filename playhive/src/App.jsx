@@ -1,9 +1,10 @@
-import ProfilePage from "./components/ProfilePage";
-
+import ProfileBanner from "./components/ProfileBanner";
+import Error404 from './components/Error404.jsx'
 function App() {
   return (
     <>
-      <ProfilePage />
+      <ProfileBanner />
+      <Error404/>
     </>
   );
 }

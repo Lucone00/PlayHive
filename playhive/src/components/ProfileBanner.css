@@ -17,13 +17,13 @@ body {
   display: flex;
   border-radius: 20px;
   padding-bottom: 50px;
-  background-color: rgb(227, 67, 102);
+  background: linear-gradient(to bottom, rgb(247, 98, 131) 63%, white 47%);
   box-shadow: 4px 9px 9px 0px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
 }
 .profile-info {
   display: flex;
-  width: 80%;
+  width: 90%;
   align-items: center;
   height: auto;
   justify-content: space-between;
@@ -34,12 +34,10 @@ body {
   font-size: 22px;
   font-weight: 600;
   padding-top: 2rem;
-  color: #fff;
-  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   width: 30%;
 }
 .profile-picture img {
@@ -48,7 +46,10 @@ body {
   border-radius: 50%;
 }
 .profile-picture h4 {
-  padding-top: 1.4rem;
+  padding-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
 }
 /* CENTER PART*/
 .profile-details {
@@ -64,35 +65,35 @@ body {
 .center-banner-details h3 {
   font-size: 2rem;
   font-weight: 600;
+  color: black;
 }
 .center-banner-details button {
   width: 80px;
   height: 30px;
   border-radius: 10px;
   border: none;
-  background-color: #404D69;
+  background-color: #404d69;
   font-size: 1rem;
   font-weight: 600;
   margin-left: 0.7rem;
   margin-top: 0.6rem;
 }
-.link-buttons{
+.link-buttons {
   margin-left: 2rem;
 }
 
-.insight-profile{
+.insight-profile {
   display: flex;
   width: 100%;
 }
-.insight-profile p:nth-child(2){
+.insight-profile p:nth-child(2) {
   margin-left: 1rem;
 }
-
 
 .character-menu {
   width: 30%;
 }
-.character-menu img{
+.character-menu img {
   width: 100px;
   max-width: 100%;
   height: auto;

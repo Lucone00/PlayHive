@@ -1,8 +1,8 @@
-import "../components/profilePage.css";
+import "../components/ProfileBanner.css";
 import ImageBox from "./ImageBox";
 
 
-const ProfilePage = () => {
+const ProfileBanner = () => {
   return (
     <div className="profile-page">
       <div className="banner">
@@ -37,4 +37,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default ProfileBanner;
