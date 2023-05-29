@@ -1,24 +1,25 @@
 .character-framework {
-  width: 40%;
-  height: 30%;
+  width: 30%;
+  height: 45%;
 }
 .image-box {
   width: 100%;
+  max-width: 100%;
   height: auto;
-  max-width: 180px;
-  max-height: 150px;
-  min-width: 80px;
   margin: 0 auto;
   overflow: hidden;
   cursor: pointer;
 }
-
+.selected-character{
+  filter: drop-shadow(1px 7px 4px #333);
+  max-height: 162px;
+}
 .image-menu {
   position: absolute;
   top: 25%;
-  left: 25%;
+  left: 10%;
   display: none;
-  width: 50%;
+  width: 80%;
   height: 50%;
   background-color: rgba(0, 0, 0, 0.8);
 }

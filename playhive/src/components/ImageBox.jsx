@@ -3,15 +3,16 @@ import "../components/imageBox.css";
 
 const ImageBox = () => {
   const [selectedImage, setSelectedImage] = useState(
-    "../../public/assets/Goblin_info.webp"
+    "../../public/assets/Mario-kart.png"
   );
   const characters = [
-    "../../public/assets/Goblin_info.webp",
-    "../../public/assets/Pikachu.jpeg",
     "../../public/assets/Lucario.png",
-    "../../public/assets/Sonic.jpg",
-    "../../public/assets/Zelda.png",
-    "../../public/assets/squirtle.png",
+    "../../public/assets/Charizard.png",
+    "../../public/assets/Detective-pikachu.png",
+    "../../public/assets/Doctor-mario.png",
+    "../../public/assets/Link.png",
+    "../../public/assets/Mario-kart.png",
+    "../../public/assets/Sonic.png",
   ];
 
   const handleImageSelect = (image) => {
