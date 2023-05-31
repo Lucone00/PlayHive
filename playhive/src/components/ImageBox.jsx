@@ -3,7 +3,7 @@ import "../components/imageBox.css";
 
 const ImageBox = () => {
   const [selectedImage, setSelectedImage] = useState(
-    "../../public/assets/Mario-kart.png"
+    "../../public/assets/Link.png"
   );
   const characters = [
     "../../public/assets/Lucario.png",
