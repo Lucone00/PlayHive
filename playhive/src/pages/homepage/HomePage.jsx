@@ -10,7 +10,7 @@ return <>
                 <div className="grid grid-cols-3 gap-0">
                         <ProfileCard/>
                         <NewPost/>
-                </div>
+                        <div>Ciao</div>
                 <div className="flex gap-x-3 mx-6">
                         <div className="max-w-sm py-4 px-8 bg-gray-800 shadow-lg rounded-lg my-10 text-slate-300">
                                 <h3>NEWS</h3>
@@ -18,6 +18,7 @@ return <>
                                 <NewsSection/>
                                 <NewsSection/>
                         </div>
+                </div>
                 </div>
         </div>
         </>
