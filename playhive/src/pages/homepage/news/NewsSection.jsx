@@ -1,7 +1,7 @@
 function NewsSection(){
     return<>
-            <div className="max-w-sm py-4 px-8 bg-gray-800 shadow-lg rounded-lg my-20">
-                <div className="flex justify-center md:justify-end -mt-16">
+            <div className="max-w-sm py-2 px-8 bg-gray-900 shadow-lg rounded-lg my-10">
+                <div className="flex justify-center md:justify-end -mt-5">
                     <img className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"/>
                 </div>
                 <div>
