@@ -7,7 +7,7 @@ function HomePage(){
 return <>
         <div className="bg-[#1D222D]">
                 <Navbar/>
-                <div className="grid grid-cols-3">
+                <div className="grid grid-cols-3 gap-0">
                         <ProfileCard/>
                         <NewPost/>
                 </div>
