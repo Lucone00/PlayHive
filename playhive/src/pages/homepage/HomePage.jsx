@@ -7,7 +7,10 @@ function HomePage(){
 return <>
         <div className="bg-[#1D222D]">
                 <Navbar/>
-                <ProfileCard/>
+                <div className="grid grid-cols-3">
+                        <ProfileCard className="col-start-1 col-end-1"/>
+                        <NewPost className="col-start-2 col-end-3"/>
+                </div>
                 <div className="flex gap-x-3 mx-6">
                         <div className="max-w-sm py-4 px-8 bg-gray-800 shadow-lg rounded-lg my-10 text-slate-300">
                                 <h3>NEWS</h3>
