@@ -1,6 +1,6 @@
 function NewPost(){
     return <>
-            <div className="col-span-1 md:col-span-2">
+            <div className="col-span-1 md:col-span-2 mx-6">
                 <textarea
                 name="message"
                 id="message"
