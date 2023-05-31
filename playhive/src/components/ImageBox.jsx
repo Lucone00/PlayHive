@@ -21,6 +21,7 @@ const ImageBox = () => {
 
   return (
     <div className="character-framework">
+      <h4>Character:</h4>
       <div className="image-box">
         <img
           src={selectedImage}

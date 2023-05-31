@@ -1,16 +1,24 @@
 .character-framework {
-  width: 30%;
-  height: 45%;
+  width: 40%;
+  height: 100%;
+  display: flex;
 }
+.character-framework h4 {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin-top: 2.5rem;
+  margin-right: 2rem;
+}
+
 .image-box {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  cursor: pointer;
   margin: 0 auto;
   overflow: hidden;
-  cursor: pointer;
 }
-.selected-character{
+.selected-character {
   filter: drop-shadow(1px 7px 4px #333);
   max-height: 162px;
 }
@@ -23,11 +31,10 @@
   height: 50%;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .menu-option {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin: 10px;
   object-fit: cover;
   cursor: pointer;
