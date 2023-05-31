@@ -1,7 +1,6 @@
 import "../components/ProfileBanner.css";
 import ImageBox from "./ImageBox";
 
-
 const ProfileBanner = () => {
   return (
     <div className="profile-page">
@@ -30,7 +29,6 @@ const ProfileBanner = () => {
           </div>
 
           <ImageBox />
-          
         </div>
       </div>
     </div>

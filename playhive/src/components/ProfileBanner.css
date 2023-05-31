@@ -16,7 +16,7 @@ body {
   width: 100%;
   display: flex;
   border-radius: 20px;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   background: linear-gradient(to bottom, rgb(247, 98, 131) 63%, white 47%);
   box-shadow: 4px 9px 9px 0px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
@@ -34,22 +34,22 @@ body {
   font-size: 22px;
   font-weight: 600;
   padding-top: 2rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: center;
   width: 30%;
 }
 .profile-picture img {
-  width: 90px;
-  height: 90px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
+  border: 8px solid white;
 }
 .profile-picture h4 {
   padding-top: 0.8rem;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  margin-left: 1rem;
 }
 /* CENTER PART*/
 .profile-details {
@@ -57,7 +57,7 @@ body {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   color: #fff;
 }
 .center-banner-details {
@@ -82,10 +82,20 @@ body {
 .link-buttons {
   margin-left: 2rem;
 }
-
+.link-buttons button:last-child {
+  background-color: rgb(88, 86, 214);
+}
+.link-buttons button:first-child:hover {
+  background-color: #384154;
+}
+.link-buttons button:last-child:hover {
+  background-color: rgb(86, 85, 178);
+}
 .insight-profile {
   display: flex;
   width: 100%;
+  margin-top: 1.2rem;
+  font-weight: 600;
 }
 .insight-profile p:nth-child(2) {
   margin-left: 1rem;
