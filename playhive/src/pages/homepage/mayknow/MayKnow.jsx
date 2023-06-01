@@ -28,12 +28,12 @@ function MayKnow(){
                                         <p className="font-light">{item.job}</p>
                                     </div>
                                 </div>
-                                <button className="hover:bg-gradient-to-r hover:from-[#F54B64] hover:to-[#F54B64] bg-gradient-to-r from-[#F78361] to-[#F54B64]  p-2 rounded-lg">Connect</button>
+                                <button className="transition duration-300 ease-in-out hover:bg-[#F78361] bg-[#F54B64]  p-2 rounded-lg">Connect</button>
                             </div>
                    )
                 })}
                 <hr />
-                <p className="text-[#F54B64] text-center py-3 font-bold hover:text-[#F78361] cursor-pointer">See All</p>
+                <p className="text-[#F54B64] text-center py-3 font-bold transition duration-300 ease-in-out hover:text-[#F78361] cursor-pointer">See All</p>
             </div>
             </>
 }
