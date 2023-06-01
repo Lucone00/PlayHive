@@ -28,7 +28,7 @@ function MayKnow(){
                                         <p className="font-light">{item.job}</p>
                                     </div>
                                 </div>
-                                <button className="bg-gradient-to-r from-[#F78361] to-[#F54B64] hover:bg-[#F54B64] p-2 rounded-lg">Connect</button>
+                                <button className="hover:bg-gradient-to-r hover:from-[#F54B64] hover:to-[#F54B64] bg-gradient-to-r from-[#F78361] to-[#F54B64]  p-2 rounded-lg">Connect</button>
                             </div>
                    )
                 })}
