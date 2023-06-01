@@ -5,12 +5,18 @@ const ProfileBanner = () => {
   return (
     <div className="profile-page">
       <div className="banner">
-        <div className="profile-info">
+        <div className="profile-data">
+
           <div className="profile-picture">
-            <img
-              src="../../assets/pexels-eren-li-7241423.jpg"
-              alt="Profile Picture"
-            />
+            <div className="pic-profile">
+              <img
+                src="../../assets/pexels-eren-li-7241423.jpg"
+                alt="Profile Picture"
+              />
+              <div class="overlay-pic">
+                <button class="change-button">Cambia foto</button>
+              </div>
+            </div>
             <h4>Cheater lv. 4</h4>
           </div>
 
