@@ -1,9 +1,10 @@
 .character-framework {
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: flex;
+  margin-bottom: -8px;
 }
-.character-framework h4 {
+.character-framework a {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
@@ -21,6 +22,8 @@
 .selected-character {
   filter: drop-shadow(1px 7px 4px #333);
   max-height: 162px;
+  min-height: 50px;
+  min-width: 50px;
 }
 .image-menu {
   position: absolute;

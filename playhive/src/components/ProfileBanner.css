@@ -14,16 +14,15 @@ body {
 }
 .banner {
   width: 100%;
-  display: flex;
   border-radius: 20px;
-  padding-bottom: 2rem;
+  height: 330px;
   background: linear-gradient(to bottom, rgb(247, 98, 131) 58%, white 42%);
   box-shadow: 4px 9px 9px 0px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
 }
 .profile-data {
   display: flex;
-  width: 90%;
+  width: 95%;
   align-items: center;
   height: auto;
   justify-content: space-between;
@@ -79,12 +78,6 @@ body {
   background-color: #000;
   color: #fff;
 }
-.profile-picture h4 {
-  padding-top: 0.8rem;
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
 /* CENTER PART*/
 .profile-details {
   display: flex;
@@ -134,13 +127,21 @@ body {
 .insight-profile p:nth-child(2) {
   margin-left: 1rem;
 }
-
-.character-menu {
-  width: 30%;
-}
-.character-menu img {
-  width: 100px;
-  max-width: 100%;
+.description-profile {
+  width: 98%;
   height: auto;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
 }
+.description-profile h4 {
+  padding-top: 0.2rem;
+  margin-left: 3.8%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.description-profile p {
+  width: 50%;
+  font-weight: 600;
+}
+

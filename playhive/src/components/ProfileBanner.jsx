@@ -6,7 +6,6 @@ const ProfileBanner = () => {
     <div className="profile-page">
       <div className="banner">
         <div className="profile-data">
-
           <div className="profile-picture">
             <div className="pic-profile">
               <img
@@ -17,7 +16,6 @@ const ProfileBanner = () => {
                 <button class="change-button">Cambia foto</button>
               </div>
             </div>
-            <h4>Cheater lv. 4</h4>
           </div>
 
           <div className="profile-details">
@@ -33,9 +31,18 @@ const ProfileBanner = () => {
               <p>Post: 249</p>
             </div>
           </div>
-
           <ImageBox />
         </div>
+
+        <div className="description-profile">
+          <h4>Cheater lv. 4</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+            doloribus, explicabo excepturi, hic sequi ad soluta ducimus ipsam
+            suscipit. Ratione excepturi facilis nihil? Natus, incidunt dolorem?
+          </p>
+        </div>
+        
       </div>
     </div>
   );
