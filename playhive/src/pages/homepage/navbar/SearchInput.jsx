@@ -7,7 +7,7 @@ export default function SearchInput() {
                     className=" w-full px-4 py-2 text-slate-300 bg-slate-900 border border-transparent rounded-full rounded-r-none focus:border-red-400 focus:ring-red-300 focus:outline-none focus:ring focus:ring-opacity-40 hidden sm:block"
                     placeholder="Search..."
                 />
-                <button className="px-2 py-2 text-white bg-red-600 rounded-full sm:rounded-l-none sm:px-4 sm:py-2">
+                <button className="px-2 py-2 text-white bg-[#F54B64] rounded-full sm:rounded-l-none sm:px-4 sm:py-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-5 h-5"
