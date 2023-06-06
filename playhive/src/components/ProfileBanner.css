@@ -50,10 +50,10 @@ body {
 }
 .overlay-pic {
   position: absolute;
-  top: 1.5px;
-  left: -1px;
-  width: 78%;
-  height: 96%;
+  top: 0px;
+  left: 0px;
+  width: 160px;
+  height: 180px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
@@ -145,3 +145,15 @@ body {
   font-weight: 600;
 }
 
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1038px) {
+
+  .overlay-pic {
+    width: 100%;
+  }
+  .change-button {
+    padding: 2%;
+    font-size: 0.7rem;
+  }
+}
